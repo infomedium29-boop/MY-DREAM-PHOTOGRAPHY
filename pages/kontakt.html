@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt | My Dream Photography Zadar</title>
+  <meta name="description" content="Rezervirajte termin za fotografiranje u Zadru i okolici. Kontaktirajte My Dream Photography putem forme ili direktno.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .success-msg {
+      display: none;
+      padding: 20px 24px;
+      background: #f0faf4;
+      border: 1px solid #a8d5bb;
+      color: #2d6a4f;
+      font-size: 0.88rem;
+      margin-top: 20px;
+    }
+    .success-msg.visible { display: block; }
+    .error-msg {
+      display: none;
+      padding: 16px 20px;
+      background: #fff5f5;
+      border: 1px solid #f5c0c0;
+      color: #c53030;
+      font-size: 0.85rem;
+      margin-top: 16px;
+    }
+    .error-msg.visible { display: block; }
+    .btn--submitting { opacity: 0.7; pointer-events: none; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" aria-label="Glavna navigacija">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="../index.html" class="nav__logo">My Dream <span>Photography</span></a>
+        <ul class="nav__links" role="list">
+          <li><a href="../index.html">Početna</a></li>
+          <li><a href="o-nama.html">O nama</a></li>
+          <li><a href="usluge.html">Usluge</a></li>
+          <li><a href="galerija.html">Galerija</a></li>
+          <li><a href="cjenik.html">Cjenik</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <a href="kontakt.html" class="btn btn--primary nav__cta">Rezerviraj termin</a>
+        <button class="nav__hamburger" aria-label="Otvori meni" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__overlay"></div>
+  <div class="nav__mobile">
+    <a href="../index.html">Početna</a>
+    <a href="o-nama.html">O nama</a>
+    <a href="usluge.html">Usluge</a>
+    <a href="galerija.html">Galerija</a>
+    <a href="cjenik.html">Cjenik</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="kontakt.html" class="btn btn--primary">Rezerviraj termin</a>
+  </div>
+
+  <main>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="container">
+        <span class="eyebrow reveal" style="transition-delay: 0.1s;">Javljamo se brzo</span>
+        <h1 class="reveal" style="transition-delay: 0.2s;">Rezervirajte<br><em style="font-style:italic;">vaš termin</em></h1>
+        <p class="reveal" style="transition-delay: 0.3s; max-width: 460px;">Pošaljite nam upit i javit ćemo vam se s prijedlogom termina i ponudom.</p>
+      </div>
+    </div>
+
+    <!-- CONTACT LAYOUT -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- INFO -->
+          <div class="contact-info reveal-left">
+            <span class="eyebrow">Dosegnite nas</span>
+            <h2 style="font-family: var(--serif); font-size: 2rem; font-weight: 300; font-style: italic; margin-bottom: 8px; color: var(--text-dark);">Kontakt</h2>
+            <div class="divider divider--left" style="margin-bottom: 40px;"></div>
+
+            <div class="contact-info__item">
+              <svg class="contact-info__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.19 12a19.79 19.79 0 0 1-3-8.64A2 2 0 0 1 3.06 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8.54a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 15z"/>
+              </svg>
+              <div class="contact-info__text">
+                <strong>Telefon</strong>
+                <a href="tel:+385XXXXXXXXX">+385 XX XXX XXXX</a>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <svg class="contact-info__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <div class="contact-info__text">
+                <strong>E-mail</strong>
+                <a href="mailto:info@mydreamphotography.hr">info@mydreamphotography.hr</a>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <svg class="contact-info__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div class="contact-info__text">
+                <strong>Lokacija</strong>
+                Zadar i okolica, Dalmacija
+              </div>
+            </div>
+
+            <!-- Instagram CTA -->
+            <div class="instagram-cta" style="text-align: left; padding-top: 48px; border-top: none; margin-top: 32px; border-top: 1px solid var(--warm-gray);">
+              <svg class="instagram-cta__icon" style="margin-left: 0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+              <h4 style="font-family: var(--serif); font-size: 1.2rem; font-weight: 400; color: var(--text-dark); margin-bottom: 8px;">Pratite nas na Instagramu</h4>
+              <p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 20px;">Svakodnevni trenuci, galerija radova i inspiracija direktno u vašem feedu.</p>
+              <a href="#" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+                Instagram profil
+              </a>
+            </div>
+          </div>
+
+          <!-- FORM -->
+          <div class="contact-form reveal-right">
+            <span class="eyebrow" style="display:block; margin-bottom: 8px;">Upit za fotografiranje</span>
+            <h3 style="font-family: var(--serif); font-size: 1.8rem; font-weight: 300; font-style: italic; color: var(--text-dark); margin-bottom: 32px;">Pošaljite upit</h3>
+
+            <form id="contactForm" novalidate>
+              <!-- Web3Forms hidden key -->
+              <input type="hidden" name="access_key" value="OVDJE-IDE-VAŠ-WEB3FORMS-KLJUČ">
+              <input type="hidden" name="subject" value="Novi upit za fotografiranje — My Dream Photography">
+              <input type="hidden" name="from_name" value="My Dream Photography Website">
+              <input type="checkbox" name="botcheck" style="display:none">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Ime i prezime <span style="color: var(--gold);">*</span></label>
+                  <input type="text" id="name" name="name" placeholder="Ana Horvat" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label for="email">E-mail adresa <span style="color: var(--gold);">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="ana@example.com" required autocomplete="email">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Broj telefona</label>
+                <input type="tel" id="phone" name="phone" placeholder="+385 XX XXX XXXX" autocomplete="tel">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="service">Vrsta fotografiranja <span style="color: var(--gold);">*</span></label>
+                  <select id="service" name="service" required>
+                    <option value="" disabled selected>Odaberite vrstu</option>
+                    <option value="krstenje">Krštenje</option>
+                    <option value="pricest">Prva pričest</option>
+                    <option value="vjencanje">Vjenčanje</option>
+                    <option value="trudnoca">Trudničko fotografiranje</option>
+                    <option value="obitelj">Obiteljsko fotografiranje</option>
+                    <option value="rodjendan">Rođendan</option>
+                    <option value="djeca">Fotografiranje djece</option>
+                    <option value="apartman">Fotografiranje apartmana</option>
+                    <option value="ostalo">Ostalo</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="date">Željeni datum</label>
+                  <input type="date" id="date" name="date" min="">
+                </div>
+              </div>
+
+              <div class="form-group form-group--full">
+                <label for="message">Poruka <span style="color: var(--gold);">*</span></label>
+                <textarea id="message" name="message" placeholder="Opišite ukratko vaš event, lokaciju i sve što smatrate bitnim..." required rows="5"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary" id="submitBtn" style="width: 100%; justify-content: center; padding: 20px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+                Pošalji upit
+              </button>
+
+              <div class="success-msg" id="successMsg" role="alert">
+                ✓ &nbsp;Upit je uspješno poslan! Javit ćemo vam se uskoro.
+              </div>
+              <div class="error-msg" id="errorMsg" role="alert">
+                Greška pri slanju. Molimo pokušajte ponovo ili nas kontaktirajte direktno.
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <a href="../index.html" class="footer__logo">My Dream <span>Photography</span></a>
+          <p class="footer__desc">Profesionalno fotografiranje posebnih životnih trenutaka, obitelji, djece, vjenčanja, krštenja, pričesti, rođendana i apartmana.</p>
+          <a href="#" class="footer__insta" aria-label="Instagram profil">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+        </div>
+        <div>
+          <p class="footer__heading">Stranice</p>
+          <ul class="footer__links">
+            <li><a href="../index.html">Početna</a></li>
+            <li><a href="o-nama.html">O nama</a></li>
+            <li><a href="usluge.html">Usluge</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Usluge</p>
+          <ul class="footer__links">
+            <li><a href="usluge.html">Krštenja</a></li>
+            <li><a href="usluge.html">Vjenčanja</a></li>
+            <li><a href="usluge.html">Pričesti</a></li>
+            <li><a href="usluge.html">Obitelj</a></li>
+            <li><a href="usluge.html">Trudnoća</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <p class="footer__heading">Kontakt</p>
+          <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.19 12a19.79 19.79 0 0 1-3-8.64A2 2 0 0 1 3.06 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8.54a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 15z"/></svg>+385 XX XXX XXXX</p>
+          <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>info@mydreamphotography.hr</p>
+          <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Zadar i okolica</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">&copy; 2026 My Dream Photography. Sva prava pridržana.</div>
+  </footer>
+
+  <script src="../js/shared.js"></script>
+  <script>
+    // Set min date to today
+    document.getElementById('date').min = new Date().toISOString().split('T')[0];
+
+    // Web3Forms submission
+    const form = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const successMsg = document.getElementById('successMsg');
+    const errorMsg = document.getElementById('errorMsg');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      successMsg.classList.remove('visible');
+      errorMsg.classList.remove('visible');
+
+      submitBtn.classList.add('btn--submitting');
+      submitBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Šaljem...`;
+
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: json
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+          successMsg.classList.add('visible');
+          form.reset();
+          document.getElementById('date').min = new Date().toISOString().split('T')[0];
+        } else {
+          errorMsg.classList.add('visible');
+        }
+      } catch (err) {
+        errorMsg.classList.add('visible');
+      } finally {
+        submitBtn.classList.remove('btn--submitting');
+        submitBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Pošalji upit`;
+      }
+    });
+  </script>
+</body>
+</html>
