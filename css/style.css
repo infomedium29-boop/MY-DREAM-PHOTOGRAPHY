@@ -362,10 +362,18 @@ p {
 .nav__mobile a:hover { color: var(--gold); }
 
 .nav__mobile .btn {
-  margin-top: 32px;
+  margin-top: 36px;
   opacity: 0;
   transform: translateY(10px);
-  transition: opacity 0.4s 0.4s, transform 0.4s 0.4s, all var(--dur-fast);
+  transition: opacity 0.4s 0.4s, transform 0.4s 0.4s;
+  background: var(--text-dark);
+  color: var(--white) !important;
+  border: none;
+  width: 100%;
+  justify-content: center;
+  padding: 18px 24px;
+  font-size: 0.78rem;
+  letter-spacing: 0.15em;
 }
 
 .nav__mobile.open .btn {
