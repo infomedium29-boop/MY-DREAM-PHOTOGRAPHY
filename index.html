@@ -15,8 +15,8 @@
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="nav" aria-label="Glavna navigacija">
+  <!-- NAV — prozirna na hero fotografiji -->
+  <nav class="nav nav--hero" aria-label="Glavna navigacija">
     <div class="container">
       <div class="nav__inner">
         <a href="index.html" class="nav__logo">My Dream <span>Photography</span></a>
@@ -52,36 +52,47 @@
 
     <!-- HERO -->
     <section class="hero" aria-label="Hero sekcija">
+
+      <!-- Fotografija u pozadini — zamijeni src kad imaš pravu sliku -->
+      <div class="hero__bg photo-placeholder">
+        <span>Ovdje ide fotografija</span>
+      </div>
+
+      <!-- Gradient overlay za čitljivost teksta -->
+      <div class="hero__overlay"></div>
+
+      <!-- Tekst sadržaj -->
       <div class="hero__content">
-        <span class="eyebrow">My Dream Photography</span>
-        <h1 class="hero__title reveal">
-          Zabilježite<br>
-          najljepše<br>
-          <em>trenutke</em><br>
-          života
-        </h1>
-        <p class="hero__subtitle reveal" style="transition-delay: 0.15s;">
-          Profesionalno fotografiranje obitelji, djece, vjenčanja, krštenja, pričesti, trudnoće, rođendana i posebnih životnih trenutaka.
-        </p>
-        <div class="hero__buttons reveal" style="transition-delay: 0.25s;">
-          <a href="pages/kontakt.html" class="btn btn--primary">Rezervirajte termin</a>
-          <a href="pages/galerija.html" class="btn btn--outline">Pogledajte galeriju</a>
+        <div class="hero__left">
+          <span class="eyebrow" style="color: var(--gold);">My Dream Photography — Zadar</span>
+          <h1 class="hero__title reveal">
+            Zabilježite<br>
+            najljepše<br>
+            <em>trenutke</em> života
+          </h1>
+          <p class="hero__subtitle reveal" style="transition-delay: 0.15s;">
+            Profesionalno fotografiranje obitelji, djece, vjenčanja, krštenja, pričesti, trudnoće, rođendana i posebnih životnih trenutaka.
+          </p>
+          <div class="hero__buttons reveal" style="transition-delay: 0.25s;">
+            <a href="pages/kontakt.html" class="btn btn--hero-primary">Rezervirajte termin</a>
+            <a href="pages/galerija.html" class="btn btn--hero-ghost">Pogledajte galeriju</a>
+          </div>
         </div>
-        <div class="hero__scroll">
-          <span class="hero__scroll-line"></span>
-          Scroll
+
+        <div class="hero__right">
+          <div class="hero__badge reveal" style="transition-delay: 0.4s;">
+            <p>Svaki trenutak je jedinstven</p>
+            <span>Zadar &amp; okolica</span>
+          </div>
         </div>
       </div>
 
-      <div class="hero__visual">
-        <div class="photo-placeholder hero__photo-placeholder">
-          <span>Ovdje ide fotografija</span>
-        </div>
-        <div class="hero__badge reveal" style="transition-delay: 0.4s;">
-          <p>Svaki trenutak je jedinstven</p>
-          <span>Zadar &amp; okolica</span>
-        </div>
+      <!-- Scroll indikator -->
+      <div class="hero__scroll">
+        <span class="hero__scroll-line"></span>
+        <span>Scroll</span>
       </div>
+
     </section>
 
     <!-- INTRO -->
